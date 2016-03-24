@@ -31,3 +31,5 @@ Run from command line:
 
 All .js files in scripts/, test/spec and test/e2e folders will be gitignored. Develop only in .ts (TypeScript) files in these folders. Running grunt or grunt test commands or using intelliJ's TypeScript compiler will generate the .js files for all .ts files automaticly. Any changes inside .js files will be lost since they are generated.
 # 42
+
+Much Frontend
