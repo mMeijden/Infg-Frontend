@@ -22,12 +22,12 @@ angular.module('webappApp', [
       templateUrl: 'views/main.html',
 
     })
-    .state('product', {
-      url: '/product',
-      templateUrl: 'views/manageProduct.html',
-      controller: 'ProductCtrl',
-      controllerAs: 'product'
-    })
+    //.state('product', {
+    //  url: '/product',
+    //  templateUrl: 'views/manageProduct.html',
+    //  controller: 'ProductCtrl',
+    //  controllerAs: 'product'
+    //})
     .state('employee',{
       url: '/employee',
       templateUrl: 'views/manageEmployee.html',
@@ -36,4 +36,7 @@ angular.module('webappApp', [
     })
 
   $urlRouterProvider.otherwise('/');
+
+
 });
+angular.module('webApp.services', []);

@@ -1,0 +1,22 @@
+
+<table class="table" ng-init="getAllEmployees()">
+
+    <tr>
+      <th>Employee ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Date Hired</th>
+      <th>Works for Salesbranch</th>
+      <th>Detailed Information</th>
+    </tr>
+    <tr ng-repeat="employee in employees">
+      <td>{{employee.id}}</td>
+      <td>{{employee.fname}}</td>
+      <td>{{employee.lname}}</td>
+      <td>{{employee.email}}</td>
+      <td>{{employee.dateHired}}</td>
+      <td>{{employee.salesBranch}}</td>
+      <td>view more...</td>
+    </tr>
+  </table>
