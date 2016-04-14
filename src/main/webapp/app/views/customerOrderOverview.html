@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<table class="table">
+
+  <tr>
+    <th>Order ID</th>
+    <th>Order Date</th>
+    <th>View details</th>
+  </tr>
+  <tr ng-repeat="order in customerOrders">
+    <td>{{order.id}}</td>
+    <td>{{order.orderDate}}</td>
+    <td><a ui-sref="customerOrderDetail({id: order.id})" href="/#/customerorders/{{order.id}}"  ng-click="getOrderById()">view more...</a></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -15,8 +15,8 @@
       <td>{{employee.fname}}</td>
       <td>{{employee.lname}}</td>
       <td>{{employee.email}}</td>
-      <td>{{employee.dateHired}}</td>
+      <td>{{employee.dateHired | date:'yyyy-MM-dd'}}</td>
       <td>{{employee.salesBranch}}</td>
-      <td>view more...</td>
+      <td><a ui-sref="employeeDetail({id: employee.id})" href="/#/employees/{{employee.id}}"  ng-click="getEmployee(employee.id)">view more...</a></td>
     </tr>
   </table>

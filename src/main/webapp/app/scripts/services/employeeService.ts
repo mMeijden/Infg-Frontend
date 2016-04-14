@@ -3,10 +3,10 @@
 angular.module('webappApp').service('employeeService', function ($resource, $http) {
 
   var employeeResource = $resource(
-    'http://localhost:10081/employeelist',
+    'http://localhost:10081/employees/:id',
     {
-      //customerId: '@employeeId',
-      profile: '@profile'
+      id: '@id',
+      //profile: '@profile'
     },
     {
       query:  {method:'GET', isArray:true},
@@ -21,8 +21,8 @@ angular.module('webappApp').service('employeeService', function ($resource, $htt
     return employees ;
   };
 
-  this.getEmployee = function (id) {
-    return employeeResource.get({employeeId: id}, function () {
+  this.getEmployeeById = function (id) {
+    return employeeResource.query({id: id}, function () {
     }, function () {
       handleError();
     });

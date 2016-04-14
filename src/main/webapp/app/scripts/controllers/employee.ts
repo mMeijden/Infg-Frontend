@@ -8,7 +8,7 @@
  * Controller of the webappApp
  */
 angular.module('webappApp')
-  .controller('EmployeeCtrl', function ($scope, employeeService) {
+  .controller('EmployeeCtrl', function ($scope, employeeService,travelService) {
 
 
 
@@ -17,16 +17,20 @@ angular.module('webappApp')
    // $scope.employee = $scope.getEmployee(1);
 
     $scope.getAllEmployees = function () {
-      //employeeService.getAllEmployees();
       $scope.employees = employeeService.getAllEmployees();
     };
 
-    $scope.getEmployee = function (id) {
-      employeeService.getEmployee(id);
+    $scope.getEmployee = function () {
+      console.log("get employee called");
+     $scope.employee = employeeService.getEmployeeById();
+      console.log($scope.employee);
     };
 
-   $scope.employees = $scope.getAllEmployees();
-    console.log($scope.getAllEmployees());
+    $scope.getAllTravelBookings = function(){
+      console.log("called.");
+      return travelService.getAllTravelBookings();
+    };
+
 
   });
 

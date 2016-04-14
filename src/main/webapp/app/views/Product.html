@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<table class="table">
+
+  <tr>
+    <th>Product ID</th>
+    <th>Name</th>
+    <th>Size</th>
+    <th>Color</th>
+    <th>ImageURL</th>
+    <th>Price</th>
+    <th>Introduction Date</th>
+    <th>Cost</th>
+    <th>Margin</th>
+  </tr>
+  <tr ng-repeat="product in products">
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.size}}</td>
+    <td>{{product.color}}</td>
+    <td>{{product.image}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.introductionDate}}</td>
+    <td>{{product.cost}}</td>
+    <td>{{product.margin}}</td>
+  </tr>
+</table>
+</body>
+</html>

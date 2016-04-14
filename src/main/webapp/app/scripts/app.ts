@@ -28,12 +28,41 @@ angular.module('webappApp', [
     //  controller: 'ProductCtrl',
     //  controllerAs: 'product'
     //})
-    .state('employee',{
+    .state('employee', {
       url: '/employee',
       templateUrl: 'views/manageEmployee.html',
       controller: 'EmployeeCtrl',
       controllerAs: 'employee'
+    }).state('employeeDetail', {
+      url: '/employee/:id',
+      templateUrl: 'views/employee-detail.html',
+      controller: 'EmployeeCtrl',
+      controllerAs: 'employee',
     })
+      .state('travels', {
+        url: '/travels',
+        templateUrl: 'views/travel.html',
+        controller: 'travelController',
+        controllerAs: 'travel',
+      })
+    .state('products', {
+      url: '/products',
+      templateUrl: 'views/Product.html',
+      controller: 'ProductCtrl',
+      controllerAs: 'product',
+    })
+      .state('customerorders', {
+        url: '/customerorders',
+        templateUrl: 'views/customerOrderOverview.html',
+        controller: 'CustomerOrderCtrl',
+        controllerAs: 'customerOrder',
+      })
+      .state('customerOrderDetail', {
+        url: '/customerorders/:id',
+        templateUrl: 'views/customerOrderDetail.html',
+        controller: 'CustomerOrderCtrl',
+        controllerAs: 'customerOrder',
+      });
 
   $urlRouterProvider.otherwise('/');
 
