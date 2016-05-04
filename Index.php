@@ -1,0 +1,4 @@
+<?
+
+echo('Index.php');
+
