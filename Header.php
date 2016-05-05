@@ -15,11 +15,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="title" content="Outdoor Paradise">
+	<meta name="description" content="Outdoor Paradise">
+	<meta name="author" content="HHS-Z INF Groep 4">
 	<link rel="icon" href="favicon.ico">
 
-	<title>Theme Template for Bootstrap</title>
+	<title>Outdoor Paradise</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
