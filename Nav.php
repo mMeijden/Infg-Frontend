@@ -30,8 +30,6 @@ $page = preg_replace('/.php/', '', $uri[1]);
 			<ul class="nav navbar-nav">
 				<li <?=$page == 'index' ? 'class="active"' : ''?>><a href="index.php">Home</a></li>
 				<li <?=$page == 'booking' ? 'class="active"' : ''?>><a href="booking.php">Booking</a></li>
-				<li <?=$page == 'employee' ? 'class="active"' : ''?>><a href="employee.php">Contact</a></li>
-
 			</ul>
 		</div>
 	</div>
